@@ -11,13 +11,17 @@ $ npm install --save screensize
 
 ```js
 var screensize = require('screensize');
+var dimensions = screensize.calculate(5.70, 2560, 1440);
 
-screensize('Rainbow');
+/*
+ * dimensions
+ *   .width = 4.96798...
+ *   .height = 2.79449...
+ */
 ```
 ## License
 
 MIT © [Nikolay Kim]()
-
 
 [npm-image]: https://badge.fury.io/js/screensize.svg
 [npm-url]: https://npmjs.org/package/screensize
