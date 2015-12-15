@@ -1,6 +1,6 @@
 {
   "name": "screensize",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Calculate screen dimensions from diagonal and resolution",
   "homepage": "https://github.com/yaruson/screensize",
   "author": {
