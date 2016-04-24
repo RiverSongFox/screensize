@@ -11,14 +11,19 @@ $ npm install --save screensize
 
 ```js
 var screensize = require('screensize');
-var dimensions = screensize.calculate(5.70, 2560, 1440);
 
-/*
- * dimensions
- *   .width = 4.96798...
- *   .height = 2.79449...
- */
+screensize.calculate(5.70, 2560, 1440);
+// {width: 4.96798..., height: 2.79449...}
+
+var screen = screensize.guess('Full HD, 21.5 inches');
+screen.widthIn('in');    // 18.74 inches
+screen.diagonalIn('cm'); // 54.61 centimeters
+screen.pixelsPer('in');  // 102.46 pixels per inch
+screen.pixelsPer('mm');  // 4.03 pixels per millimeter
 ```
+
+Supported units: m, dm, cm, mm, in, px.
+
 ## License
 
 MIT © [Nikolay Kim]()
